@@ -10,7 +10,7 @@
       "id": 3,
       "text": "Food shopping",
       "day": "May 6th at 12pm",
-      "reminder": false
+      "reminder": true
     },
     {
       "id": 4,
