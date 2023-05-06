@@ -15,11 +15,21 @@
 ```bash
 git clone https://github.com/FelixTwoli/Tasks-manager-.git
 ```
+#### Navigate to the project directory
+```bash
+cd Tasks-manager-
+```
+#### Install Angular CLI
+```bash
+npm install -g @angular/cli 
+
+```
 #### Install dependencies
 ```bash
 npm install
 ```
 #### Run Angular dev server (http://localhost:4200)
+
 ```bash
 ng serve
 ```
