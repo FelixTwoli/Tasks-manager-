@@ -12,6 +12,7 @@ import { Task } from '../../Task';
   styleUrls: ['./tasks.component.css']
 })
 export class TasksComponent implements OnInit {
+
   task: Task[] = [];
   constructor(
     private taskService: TaskService
@@ -21,4 +22,8 @@ export class TasksComponent implements OnInit {
     this.taskService.getTasks().subscribe((tasks) => (this.task = tasks))
   }
 
+  deleteTask(task: Task) {
+    this.taskService.deleteTask(task).subscribe(() => (this.task = this.task.filter((t) => t.id !== task.id)));
+
+}
 }
