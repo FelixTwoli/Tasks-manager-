@@ -33,5 +33,8 @@ toggleReminder(task: Task) {
 
 }
 
+addTask(task: Task) {
+  this.taskService.addTask(task).subscribe((task) => (this.task.push(task)));
 
+}
 }

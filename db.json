@@ -17,6 +17,12 @@
       "text": "Clean the house",
       "day": "May 7th at 1pm",
       "reminder": true
+    },
+    {
+      "text": "Go to gym",
+      "day": "May 5th at 10pm",
+      "reminder": true,
+      "id": 6
     }
   ]
 }
