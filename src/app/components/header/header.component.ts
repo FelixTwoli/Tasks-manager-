@@ -1,6 +1,6 @@
 import { InterfaceService } from './../../services/interface.service';
 import { Component, OnInit } from '@angular/core';
-
+import { Router } from '@angular/router';
 import { Subscription } from 'rxjs';
 
 @Component({
@@ -17,12 +17,16 @@ export class HeaderComponent implements OnInit{
 
   }
 
-  constructor( private interfaceService: InterfaceService ) {
+  constructor( private interfaceService: InterfaceService, private router: Router ) {
     this.subscription = this.interfaceService.onToggle().subscribe((value) => this.showAddTask = value);
   }
 
   toggleAddTask() {
     this.interfaceService.toggleAddTask();
+  }
+
+  hasRoute(route: string) {
+    return this.router.url === route;
   }
 
 }
