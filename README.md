@@ -11,6 +11,10 @@
 - Lazy Loading
 ### Usage
  
+#### Clone the repo
+```bash
+git clone https://github.com/FelixTwoli/Tasks-manager-.git
+```
 #### Install dependencies
 ```bash
 npm install
